@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.canvas.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="370.0" prefWidth="498.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rwfwcbcalculator.FXMLAboutController">
+   <children>
+      <HBox prefHeight="37.0" prefWidth="498.0">
+         <children>
+            <MenuBar prefHeight="30.0" prefWidth="518.0">
+              <menus>
+                <Menu mnemonicParsing="false" text="About">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#handleGoToAbout" text="About The Programmer" />
+                  </items>
+                </Menu>
+                  <Menu mnemonicParsing="false" text="Switch Calculator Mode">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#handleGoToScientificCalculator" text="Scientific Mode" />
+                    </items>
+                  </Menu>
+              </menus>
+            </MenuBar>
+         </children>
+      </HBox>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dcecfc" height="231.0" layoutX="128.0" layoutY="45.0" stroke="BLACK" strokeType="INSIDE" width="279.0" />
+      <Label layoutX="136.0" layoutY="56.0" text="Author: Robert Fink" />
+      <Label layoutX="135.0" layoutY="244.0" text="Object Oriented Programming Final Project" />
+      <Label layoutX="134.0" layoutY="95.0" text="University of Missouri - Columbia" />
+      <Label layoutX="134.0" layoutY="131.0" text="Major: Information Technology" />
+      <Label layoutX="134.0" layoutY="168.0" text="Minor: Business" />
+      <Label layoutX="135.0" layoutY="207.0" text="Basic / Scientific Calculator" />
+      <Button layoutX="99.0" layoutY="288.0" mnemonicParsing="false" onAction="#handleGoToCalculator" prefHeight="50.0" prefWidth="120.0" text="Basic Calculator" />
+      <Button layoutX="278.0" layoutY="287.0" mnemonicParsing="false" onAction="#handleGoToScientificCalculator" prefHeight="50.0" prefWidth="151.0" text="Scientific Calculator" />
+   </children>
+</AnchorPane>

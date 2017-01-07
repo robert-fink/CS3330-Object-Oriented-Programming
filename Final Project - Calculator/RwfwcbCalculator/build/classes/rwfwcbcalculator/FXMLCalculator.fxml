@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.canvas.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="370.0" prefWidth="498.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rwfwcbcalculator.FXMLCalculatorController">
+   <children>
+      <HBox prefHeight="37.0" prefWidth="498.0">
+         <children>
+            <MenuBar prefHeight="30.0" prefWidth="518.0">
+              <menus>
+                <Menu mnemonicParsing="false" text="About">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#handleGoToAbout" text="About The Programmer" />
+                  </items>
+                </Menu>
+                  <Menu mnemonicParsing="false" text="Switch Calculator Mode">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#handleGoToScientificCalculator" text="Scientific Mode" />
+                    </items>
+                  </Menu>
+              </menus>
+            </MenuBar>
+         </children>
+      </HBox>
+      <HBox layoutX="15.0" layoutY="45.0" prefHeight="53.0" prefWidth="467.0">
+         <children>
+            <TextField fx:id="output" alignment="CENTER" editable="false" prefHeight="60.0" prefWidth="499.0" />
+         </children>
+      </HBox>
+      <HBox layoutX="18.0" layoutY="310.0" prefHeight="37.0" prefWidth="467.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#inputNumpad" prefHeight="37.0" prefWidth="236.0" text="0" />
+            <Button mnemonicParsing="false" onAction="#inputDecimal" prefHeight="50.0" prefWidth="116.0" text="." />
+            <Button mnemonicParsing="false" onAction="#inputOperator" prefHeight="50.0" prefWidth="116.0" text="=" />
+         </children>
+      </HBox>
+      <HBox layoutX="18.0" layoutY="273.0" prefHeight="37.0" prefWidth="467.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#inputNumpad" prefHeight="50.0" prefWidth="125.0" text="1" />
+            <Button mnemonicParsing="false" onAction="#inputNumpad" prefHeight="50.0" prefWidth="125.0" text="2" />
+            <Button mnemonicParsing="false" onAction="#inputNumpad" prefHeight="50.0" prefWidth="125.0" text="3" />
+            <Button mnemonicParsing="false" onAction="#inputOperator" prefHeight="50.0" prefWidth="125.0" text="+" />
+         </children>
+      </HBox>
+      <HBox layoutX="18.0" layoutY="236.0" prefHeight="37.0" prefWidth="467.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#inputNumpad" prefHeight="50.0" prefWidth="125.0" text="4" />
+            <Button mnemonicParsing="false" onAction="#inputNumpad" prefHeight="50.0" prefWidth="125.0" text="5" />
+            <Button mnemonicParsing="false" onAction="#inputNumpad" prefHeight="50.0" prefWidth="125.0" text="6" />
+            <Button mnemonicParsing="false" onAction="#inputOperator" prefHeight="50.0" prefWidth="125.0" text="-" />
+         </children>
+      </HBox>
+      <HBox layoutX="18.0" layoutY="199.0" prefHeight="37.0" prefWidth="467.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#inputNumpad" prefHeight="37.0" prefWidth="125.0" text="7" />
+            <Button mnemonicParsing="false" onAction="#inputNumpad" prefHeight="50.0" prefWidth="125.0" text="8" />
+            <Button mnemonicParsing="false" onAction="#inputNumpad" prefHeight="50.0" prefWidth="125.0" text="9" />
+            <Button mnemonicParsing="false" onAction="#inputOperator" prefHeight="50.0" prefWidth="125.0" text="x" />
+         </children>
+      </HBox>
+      <HBox layoutX="18.0" layoutY="162.0" prefHeight="37.0" prefWidth="467.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#inputClear" prefHeight="37.0" prefWidth="239.0" text="Clear" />
+            <Button mnemonicParsing="false" onAction="#inputPercent" prefHeight="37.0" prefWidth="120.0" text="\%" />
+            <Button mnemonicParsing="false" onAction="#inputOperator" prefHeight="37.0" prefWidth="120.0" text="/" />
+         </children>
+      </HBox>
+      <HBox layoutX="19.0" layoutY="127.0" prefHeight="37.0" prefWidth="467.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#handleSave" prefHeight="35.0" prefWidth="235.0" text="Save Answer" />
+            <Button mnemonicParsing="false" onAction="#handleOpen" prefHeight="35.0" prefWidth="235.0" text="Recall Answer" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

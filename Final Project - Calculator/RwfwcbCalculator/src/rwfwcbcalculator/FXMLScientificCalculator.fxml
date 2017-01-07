@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="375.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rwfwcbcalculator.FXMLScientificCalculatorController">
+   <children>
+      <HBox layoutX="12.0" layoutY="52.0" prefHeight="61.0" prefWidth="458.0">
+         <children>
+            <TextField fx:id="output" editable="false" prefHeight="69.0" prefWidth="471.0" />
+         </children>
+      </HBox>
+      <HBox prefHeight="37.0" prefWidth="507.0">
+         <children>
+            <MenuBar prefHeight="30.0" prefWidth="514.0">
+              <menus>
+                <Menu mnemonicParsing="false" text="About">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#handleGoToAbout" text="About The Programmer" />
+                  </items>
+                </Menu>
+                  <Menu mnemonicParsing="false" text="Switch Calculator Mode">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#handleGoToCalculator" text="Standard Mode" />
+                    </items>
+                  </Menu>
+              </menus>
+            </MenuBar>
+         </children>
+      </HBox>
+      <HBox layoutX="18.0" layoutY="310.0" prefHeight="37.0" prefWidth="458.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#inputPi" prefHeight="37.0" prefWidth="80.0" text="π" />
+            <Button mnemonicParsing="false" onAction="#inputTan" prefHeight="37.0" prefWidth="80.0" text="tan" />
+            <Button mnemonicParsing="false" onAction="#inputNumpad" prefHeight="37.0" prefWidth="160.0" text="0" />
+            <Button mnemonicParsing="false" onAction="#inputDecimal" prefHeight="50.0" prefWidth="80.0" text="." />
+            <Button mnemonicParsing="false" onAction="#inputOperator" prefHeight="50.0" prefWidth="80.0" text="=" />
+         </children>
+      </HBox>
+      <HBox layoutX="18.0" layoutY="273.0" prefHeight="37.0" prefWidth="458.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#inputOneDividedByX" prefHeight="37.0" prefWidth="80.0" text="1 / x" />
+            <Button mnemonicParsing="false" onAction="#inputCos" prefHeight="37.0" prefWidth="80.0" text="cos" />
+            <Button mnemonicParsing="false" onAction="#inputNumpad" prefHeight="50.0" prefWidth="80.0" text="1" />
+            <Button mnemonicParsing="false" onAction="#inputNumpad" prefHeight="50.0" prefWidth="80.0" text="2" />
+            <Button mnemonicParsing="false" onAction="#inputNumpad" prefHeight="50.0" prefWidth="80.0" text="3" />
+            <Button mnemonicParsing="false" onAction="#inputOperator" prefHeight="50.0" prefWidth="80.0" text="+" />
+         </children>
+      </HBox>
+      <HBox layoutX="18.0" layoutY="236.0" prefHeight="37.0" prefWidth="458.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#inputEToPowerX" prefHeight="37.0" prefWidth="80.0" text="e^x" />
+            <Button mnemonicParsing="false" onAction="#inputSin" prefHeight="37.0" prefWidth="80.0" text="sin" />
+            <Button mnemonicParsing="false" onAction="#inputNumpad" prefHeight="50.0" prefWidth="80.0" text="4" />
+            <Button mnemonicParsing="false" onAction="#inputNumpad" prefHeight="50.0" prefWidth="80.0" text="5" />
+            <Button mnemonicParsing="false" onAction="#inputNumpad" prefHeight="50.0" prefWidth="80.0" text="6" />
+            <Button mnemonicParsing="false" onAction="#inputOperator" prefHeight="50.0" prefWidth="80.0" text="-" />
+         </children>
+      </HBox>
+      <HBox layoutX="18.0" layoutY="199.0" prefHeight="37.0" prefWidth="458.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#inputTenToPowerX" prefHeight="37.0" prefWidth="80.0" text="10^x" />
+            <Button mnemonicParsing="false" onAction="#inputCubed" prefHeight="37.0" prefWidth="80.0" text="x^3" />
+            <Button mnemonicParsing="false" onAction="#inputNumpad" prefHeight="50.0" prefWidth="80.0" text="7" />
+            <Button mnemonicParsing="false" onAction="#inputNumpad" prefHeight="50.0" prefWidth="80.0" text="8" />
+            <Button mnemonicParsing="false" onAction="#inputNumpad" prefHeight="50.0" prefWidth="80.0" text="9" />
+            <Button mnemonicParsing="false" onAction="#inputOperator" prefHeight="50.0" prefWidth="80.0" text="x" />
+         </children>
+      </HBox>
+      <HBox layoutX="18.0" layoutY="162.0" prefHeight="37.0" prefWidth="458.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#inputSquareRoot" prefHeight="37.0" prefWidth="80.0" text="√x" />
+            <Button mnemonicParsing="false" onAction="#inputSquared" prefHeight="37.0" prefWidth="80.0" text="x^2" />
+            <Button mnemonicParsing="false" onAction="#inputClear" prefHeight="37.0" prefWidth="159.0" text="Clear" />
+            <Button mnemonicParsing="false" onAction="#inputPercent" prefHeight="50.0" prefWidth="80.0" text="\%" />
+            <Button mnemonicParsing="false" onAction="#inputOperator" prefHeight="37.0" prefWidth="80.0" text="/" />
+         </children>
+      </HBox>
+      <HBox layoutX="19.0" layoutY="127.0" prefHeight="37.0" prefWidth="458.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#handleSave" prefHeight="35.0" prefWidth="230.0" text="Save Answer" />
+            <Button mnemonicParsing="false" onAction="#handleOpen" prefHeight="35.0" prefWidth="230.0" text="Recall Answer" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
